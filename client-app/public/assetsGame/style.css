@@ -1,0 +1,106 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+.game{
+width: 100%;
+height: 100vh;
+position: relative;
+overflow: hidden;
+background-image: url('./photo1.jpg');
+background-repeat: no-repeat;
+background-size: 100% 120% ;
+}
+#ground{
+width: 100%;
+height: 100px;
+background-color: green;
+position: absolute;
+bottom: 0;
+}
+
+#character{
+width: 50px;
+height: 50px;
+/* background-color:whitesmoke; */
+border-radius: 50%;
+position: absolute;
+bottom: 14%;
+right: calc(100% - 100px);
+box-shadow: 0px 0px 20px 3px #f2f5f0;
+}
+
+
+.obstacle{
+width: 30px;
+height: 100px;
+background-color: black;
+position: absolute;
+bottom: 14%;
+right: 0;
+}
+
+h2{
+font-family:sans-serif;
+margin-top:10px;
+margin-left:10px;
+
+}
+
+audio{
+    width: 100px;
+    height: 20px;
+}
+.containeri{
+ /* border: 2px solid black; */
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin-top: 120px;
+ margin-left: 510px;
+ width: 500px;
+ /* width: calc(100% - 75%); */
+ height: 350px;
+ /* height: calc(100% - 50%);; */
+ overflow: hidden; 
+}
+#play-button{
+
+border-radius: 10px;
+font-size: 30px;
+box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+
+#animate{
+    width: auto;
+    height: 100px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-direction: reverse;  
+  }
+  
+  @keyframes example {
+    0%   { left:0px; top:0px;}
+    25%  { left:500px; top:0px;}
+    100% { left:0px; top:0px;}
+  }
+
+  #animate2{
+    width: auto;
+    height: 100px;
+    position: relative;
+    animation-name: example2;
+    animation-duration: 5s;
+    animation-direction: reverse;  
+  }
+  
+  @keyframes example2 {
+    0%   { right:0px; top:0px;}
+    25%  { right:500px; top:0px;}
+    100% { right:0px; top:0px;}
+  }
+  

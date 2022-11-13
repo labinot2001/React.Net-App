@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Fix It - Mobile Services </title>
+
+  <meta charset="utf-8">
+
+  <meta name="description" content="Simple, clean, responsive website built with html5, CSS3, Js, jQuery and Bootstrap">
+
+  <meta name="keywords" content="web, design, html, css, html5, css3, javascript, jquery, bootstrap, development">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- Google Fonts -->
+  <link
+    href='https://fonts.googleapis.com/css?family=Raleway:500italic,600italic,600,700,700italic,300italic,300,400,400italic,800,900'
+    rel='stylesheet' type='text/css'>
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,600italic,700,900'
+    rel='stylesheet' type='text/css'>
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Fontawesome  -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <!-- Animate CSS -->
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- BX slider CSS -->
+  <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+
+  <!-- responsive css -->
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+  <style>
+    .loading {
+      -webkit-animation: sk-scaleout 1s infinite ease-in-out;
+      animation: sk-scaleout 1s infinite ease-in-out;
+      background-color: #124c62;
+      border-radius: 100%;
+      height: 6em;
+      width: 6em;
+    }
+
+    .containe {
+      align-items: center;
+      background-color: white;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      width: 100vw;
+    }
+
+    @keyframes sk-scaleout {
+      0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+      }
+      100% {
+        -webkit-transform: scale(1);
+        opacity: 0.5;
+        transform: scale(1);
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="spinner" class="containe">
+    <!-- <div class="loading"></div> -->
+    <img width="400px" src="appGif.gif" />
+  </div>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+
+      <script src="js/jquery.bxslider.min.js"></script>
+
+      <script src="js/jquery.waypoints.min.js"></script>
+      <script src="js/jquery.counterup.min.js"></script>
+
+      <script src="js/wow.min.js"></script>
+
+      <script src="js/custom.js"></script>
+
+      <!-- <script src="js/main.js"></script> -->
+</body>
+
+</html>
